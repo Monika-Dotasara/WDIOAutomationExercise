@@ -1,0 +1,9 @@
+# npm dependency directories
+node_modules/
+
+
+# IDEA user specific items
+.idea/
+
+# The default output folder
+out/**
