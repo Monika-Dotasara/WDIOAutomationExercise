@@ -1,0 +1,23 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "Testing Framework",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "wdio"
+  },
+  "author": "Monika Dotasara",
+  "license": "ISC",
+  "dependencies": {
+    "@wdio/cli": "^8.40.2"
+  },
+  "devDependencies": {
+    "@types/jasmine": ">=5.1.4",
+    "@wdio/jasmine-framework": "^8.16.7",
+    "@wdio/local-runner": "^8.40.5",
+    "@wdio/spec-reporter": "^8.40.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  }
+}
