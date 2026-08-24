@@ -18,9 +18,8 @@ export class MainPage {
 
     public async changeSortOrder(option: string) {
         await this.searchDropdown.click();
-        await this.searchDropdown.setValue(option);
-        const optionEl = await $(`//li[normalize-space()='${option}']`);
-        await optionEl.click();
+        await this.searchDropdown.addValue(option);
+        await browser.keys('Enter');
 
         const prices = await this.priceItems;
         const firstPrice = (await prices[0].getText()).replace('$', '').replace(',', '').trim();
